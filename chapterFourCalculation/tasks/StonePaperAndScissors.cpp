@@ -8,7 +8,7 @@ int main()
     random_device rd;
     mt19937 gen(rd()); 
     //Определение распределения (равномерное распределение целых чисел от 1 до 3)
-    uniform_int_distribution<> distrib(1, 3);
+    uniform_int_distribution<> distrib(start, end);
     int randVal = distrib(gen);
     string machine;
     string user;
