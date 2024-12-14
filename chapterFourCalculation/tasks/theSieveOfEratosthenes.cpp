@@ -12,7 +12,7 @@ int main() {
   for (int p = 2; p * p <= x; ++p) {
     if (is_prime[p]) {
       for (int i = p * p; i <= x; i += p) {
-        is_prime[i] = false; // Отмечаем все кратные p как непростыеs
+        is_prime[i] = false; // Отмечаем все кратные p как непростые
       }
     }
   }
